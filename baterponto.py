@@ -24,7 +24,7 @@ def findEncodings(images):
     return encodeList
 
 def markAttendace(name):
-    whit open('Ponto.cvs', 'r+') as f:
+    with open('Ponto.cvs', 'r+') as f:
     myDataList = f.readlines()
     namelist = []
     for line in myDataList:
